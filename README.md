@@ -1,6 +1,63 @@
-# Aprendiendo Jest en el Frontend
+# TDD (Test-Driven Development)
 
-Este repositorio está dedicado a aprender a usar **Jest** para realizar pruebas en aplicaciones frontend, con un enfoque en aplicaciones **React**. Los ejemplos del repositorio están basados en una aplicación de contador (**counter app**) desarrollada en React.
+El Desarrollo Guiado por Pruebas, es una metodología de desarrollo de software que se basa en escribir pruebas antes de escribir el código que debe pasar esas pruebas. La idea central de TDD es que las pruebas definan el comportamiento esperado del código antes de que se escriba.
+
+## Cómo Funciona TDD
+El proceso de TDD se puede dividir en los siguientes pasos:
+
+1. Escribir una Prueba: Escribe una prueba que defina una pequeña parte de la funcionalidad que deseas implementar. La prueba debe fallar inicialmente porque el código que la hace pasar aún no existe.
+
+2. Escribir el Código: Escribe el código mínimo necesario para hacer que la prueba pase. El código no debe ser más de lo necesario; el objetivo es que sea suficiente para cumplir con la prueba.
+
+3. Refactorizar: Una vez que la prueba pasa, refactoriza el código para mejorar su estructura o eficiencia sin cambiar su comportamiento. Asegúrate de que las pruebas sigan pasando después de la refactorización.
+
+4. Repetir: Repite este ciclo de escribir pruebas, implementar el código, y refactorizar hasta que toda la funcionalidad deseada esté implementada y todas las pruebas pasen.
+
+## Beneficios de TDD
+- Código de Mayor Calidad: TDD fomenta la escritura de código más limpio y modular, ya que cada unidad de código se escribe para pasar pruebas específicas.
+- Menos Bugs: Las pruebas automatizadas ayudan a detectar errores antes en el ciclo de desarrollo, lo que reduce el número de bugs en la etapa de producción.
+- Diseño Mejorado: TDD puede conducir a un diseño de código más estructurado y bien pensado, ya que el desarrollo se basa en requisitos claros definidos por las pruebas.
+- Documentación en Pruebas: Las pruebas actúan como documentación viva del sistema, mostrando claramente qué debería hacer el código y cómo debería comportarse.
+
+## Ciclo de TDD
+El ciclo de TDD a menudo se representa con el acrónimo "Red, Green, Refactor":
+
+- Red: Escribe una prueba que falla (roja).
+- Green: Escribe el código mínimo necesario para hacer que la prueba pase (verde).
+- Refactor: Mejora el código mientras mantienes las pruebas verdes (funcionando).
+
+## Ejemplo de TDD en JavaScript
+Supongamos que quieres desarrollar una función que sume dos números. El proceso TDD sería:
+
+1. Escribir la prueba:
+
+```javascript
+// sum.test.js
+const sum = require('./sum');
+
+test('suma 1 + 2 para igualar 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+```
+
+2. Escribir el código mínimo:
+
+```javascript
+// sum.js
+function sum(a, b) {
+  return a + b;
+}
+
+module.exports = sum;
+```
+
+3. Refactorizar (en este caso, el código ya es bastante simple, pero podrías mejorar la estructura o añadir más funciones si fuera necesario).
+
+Con TDD, cada pieza del código está respaldada por una prueba, lo que ayuda a garantizar que el código sea correcto y funcione como se espera.
+
+## Aprendiendo Jest en el Frontend
+
+Este repositorio está dedicado a aprender a usar **Jest** para realizar pruebas en aplicaciones frontend, con un enfoque en aplicaciones **React**. Los ejemplos del repositorio están basados en una aplicación de contador (**counter app**) desarrollada con  ´create-react-app´ .
 
 ## ¿Qué es un test?
 
