@@ -31,6 +31,33 @@ La metodología **AAA** es una forma estructurada de escribir tests. Se divide e
 1. **Arrange**: Preparas todos los datos y condiciones necesarios para ejecutar la prueba.
 2. **Act**: Ejecutas la funcionalidad o el código que deseas probar.
 3. **Assert**: Verificas que el resultado sea el esperado.
+ 
+## Uso de funciones propias de Jest:
+
+En la documentación oficial, encontraremos varias funciones que se utilizan a lo largo de este repo: 
+
+1. [`test`](https://jestjs.io/docs/api#testname-fn): Función utilizada para definir una prueba.
+
+2. [`describe`](https://jestjs.io/docs/api#describename-fn): Agrupa varias pruebas relacionadas.
+
+3. [`it`](https://jestjs.io/docs/api#itname-fn): Alias de `test`, utilizado para definir una prueba.
+
+4. [`expect`](https://jestjs.io/docs/expect): Función principal para hacer afirmaciones sobre el resultado de una prueba.
+
+5. [`beforeEach`](https://jestjs.io/docs/api#beforeeachfn-timeout): Ejecuta una función antes de cada prueba.
+
+6. [`afterEach`](https://jestjs.io/docs/api#aftereachfn-timeout): Ejecuta una función después de cada prueba.
+
+7. [`beforeAll`](https://jestjs.io/docs/api#beforeallfn-timeout): Ejecuta una función antes de todas las pruebas en un bloque `describe`.
+
+8. [`afterAll`](https://jestjs.io/docs/api#afterallfn-timeout): Ejecuta una función después de todas las pruebas en un bloque `describe`.
+
+9. [`mock`](https://jestjs.io/docs/api#jestmockmodulename-fn): Crea una versión simulada (mock) de un módulo.
+
+10. [`spyOn`](https://jestjs.io/docs/api#jestspyonobject-methodname): Espía en un método de un objeto para rastrear llamadas y modificar su comportamiento.
+
+
+
 
 ### Ejemplo en un test de contador:
 
