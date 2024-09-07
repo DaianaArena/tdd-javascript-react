@@ -2,17 +2,19 @@
 
 describe('Pruebas en el archivo demo.test.js', () => {
     
+    // La fx test recibe dos parametros, el nombre del test y una fx flecha
+    test( 'debe ser true', () => {
     
-    test( 'deben de ser iguales los string', () => {
+        // 1. A- ARRANGE : inicialización
+        const isActive = false;
     
-        // 1. inicialización
-        const mensaje = 'Hola Mundo';
+        // 2. A-ACT : estímulo
+        if (!isActive){
+            throw new Error('la variable es false')
+        }
     
-        // 2. estímulo
-        const mensaje2 = `Hola Mundo`;
-    
-        // 3. Observar el comportamiento
-        expect( mensaje ).toBe( mensaje2 ); // ===
+        // 3. A- ASSERT : Observar el comportamiento
+        //expect( mensaje ).toBe( mensaje2 ); // ===
     
     })
     
