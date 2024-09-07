@@ -45,23 +45,23 @@ En la documentación oficial, encontraremos varias funciones que se utilizan a l
 4. [`expect`](https://jestjs.io/docs/expect): Función principal para hacer afirmaciones sobre el resultado de una prueba.
     - [`toBe(value)`](https://jestjs.io/docs/expect#tobevalue): Verifica que el valor esperado sea igual al valor recibido.
 
-- [`not.toBe(value)`](https://jestjs.io/docs/expect#tonotbevalue): Verifica que el valor esperado no sea igual al valor recibido.
+    - [`not.toBe(value)`](https://jestjs.io/docs/expect#tonotbevalue): Verifica que el valor esperado no sea igual al valor recibido.
 
-- [`toBeNull()`](https://jestjs.io/docs/expect#tobenull): Verifica que el valor sea `null`.
+    - [`toBeNull()`](https://jestjs.io/docs/expect#tobenull): Verifica que el valor sea `null`.
 
-- [`toBeTruthy()`](https://jestjs.io/docs/expect#tobetruthy): Verifica que el valor sea considerado "truthy" (verdadero en un contexto booleano).
+    - [`toBeTruthy()`](https://jestjs.io/docs/expect#tobetruthy): Verifica que el valor sea considerado "truthy" (verdadero en un contexto booleano).
 
-- [`toBeFalsy()`](https://jestjs.io/docs/expect#tobefalsy): Verifica que el valor sea considerado "falsy" (falso en un contexto booleano).
+    - [`toBeFalsy()`](https://jestjs.io/docs/expect#tobefalsy): Verifica que el valor sea considerado "falsy" (falso en un contexto booleano).
 
-- [`toBeGreaterThan(number)`](https://jestjs.io/docs/expect#tobegreaterthannumber): Verifica que el valor sea mayor que el número dado.
+    - [`toBeGreaterThan(number)`](https://jestjs.io/docs/expect#tobegreaterthannumber): Verifica que el valor sea mayor que el número dado.
 
-- [`toBeLessThan(number)`](https://jestjs.io/docs/expect#tobelessthannumber): Verifica que el valor sea menor que el número dado.
+    - [`toBeLessThan(number)`](https://jestjs.io/docs/expect#tobelessthannumber): Verifica que el valor sea menor que el número dado.
 
-- [`toEqual(value)`](https://jestjs.io/docs/expect#toequalvalue): Verifica que el valor esperado sea igual al valor recibido, incluyendo objetos y arrays.
+    - [`toEqual(value)`](https://jestjs.io/docs/expect#toequalvalue): Verifica que el valor esperado sea igual al valor recibido, incluyendo objetos y arrays.
 
-- [`toContain(item)`](https://jestjs.io/docs/expect#tocontainitem): Verifica que un array o un iterable contenga un elemento específico.
+    - [`toContain(item)`](https://jestjs.io/docs/expect#tocontainitem): Verifica que un array o un iterable contenga un elemento específico.
 
-- [`toHaveLength(length)`](https://jestjs.io/docs/expect#tohavelengthlength): Verifica que un objeto (como un array o una cadena) tenga una longitud específica.
+    - [`toHaveLength(length)`](https://jestjs.io/docs/expect#tohavelengthlength): Verifica que un objeto (como un array o una cadena) tenga una longitud específica.
 
 
 5. [`beforeEach`](https://jestjs.io/docs/api#beforeeachfn-timeout): Ejecuta una función antes de cada prueba.
