@@ -48,6 +48,7 @@ test('incrementa el contador cuando se hace clic en el botón', () => {
   // Assert
   expect(count).toHaveTextContent('1');
 });
+```
 
 ## Instalación de Jest en Diferentes Entornos
 
