@@ -55,21 +55,21 @@ test('incrementa el contador cuando se hace clic en el botón', () => {
 ### Create React App
 En Create React App, Jest viene preconfigurado de manera predeterminada. No necesitas instalarlo ni configurarlo por separado. Simplemente escribe tus tests en archivos .test.js o .spec.js y ejecuta:
 
- ´´´
+```
 npm test
-´´´
+```
 
 ### Next.js
 Para usar Jest en un proyecto Next.js, sigue estos pasos:
 
 1. Instala Jest y las dependencias necesarias:
- ´´´
+```
 npm install --save-dev jest babel-jest @testing-library/react @testing-library/jest-dom
 
-´´´
+```
 2. Crea un archivo jest.config.js en la raíz del proyecto:
 
- ´´´
+```
 const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({
@@ -84,16 +84,16 @@ const customJestConfig = {
 module.exports = createJestConfig(customJestConfig);
 
 
-´´´
+```
 
 3.Crea un archivo jest.setup.js:
-´´´
+```
 import '@testing-library/jest-dom';
 
-´´´
+```
 
 4. Añade un script en package.json para correr las pruebas:
-´´´
+```
 {
   "scripts": {
     "test": "jest"
@@ -101,35 +101,35 @@ import '@testing-library/jest-dom';
 }
 
 
-´´´
+```
 
 5. Ejecuta las pruebas:
-´´´
+```
 npm test
 
 
-´´´
+```
 ### Vite
 Vite no incluye Jest por defecto, por lo que debes configurarlo manualmente. Aquí están los pasos:
 
 1. Instala las dependencias necesarias:
- ´´´
+ ```
 npm install --save-dev jest babel-jest @testing-library/react @testing-library/jest-dom @babel/preset-env @babel/preset-react
 
 
-´´´
+```
 
 2. Crea un archivo babel.config.js:
- ´´´
+ ```
 module.exports = {
   presets: ['@babel/preset-env', '@babel/preset-react'],
 };
 
 
-´´´
+```
 
 3.  Crea el archivo jest.config.js:
- ´´´
+ ```
  module.exports = {
   testEnvironment: 'jsdom',
   transform: {
@@ -139,16 +139,16 @@ module.exports = {
 };
 
 
-´´´
+```
 4.  Crea jest.setup.js:
- ´´´
+ ```
  import '@testing-library/jest-dom';
 
 
-´´´
+```
 
 5.  Añade el script de pruebas en package.json:
- ´´´
+ ```
  
 {
   "scripts": {
@@ -157,10 +157,10 @@ module.exports = {
 }
 
 
-´´´
+```
 6.  Ejecuta las pruebas:
- ´´´
+ ```
  npm test
 
 
-´´´
+```
